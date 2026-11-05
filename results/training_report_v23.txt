@@ -1,0 +1,22 @@
+FlexVoice 2.3: trial-separated four-fold evaluation
+Accuracy: 93.6%
+Balanced accuracy: 93.6%
+Fold scores: [0.8181818181818182, 0.9854545454545455, 0.9854545454545455, 0.9563636363636364]
+
+              precision    recall  f1-score   support
+
+        REST       1.00      1.00      1.00       100
+       INTRO       1.00      1.00      1.00       100
+      HUNGRY       0.79      0.94      0.86       100
+   NEED_REST       0.93      0.75      0.83       100
+   COME_HERE       0.77      0.86      0.82       100
+   FEEL_GOOD       0.84      0.75      0.79       100
+ FEEL_UNWELL       1.00      1.00      1.00       100
+         YES       1.00      1.00      1.00       100
+          NO       1.00      1.00      1.00       100
+    ASK_NAME       1.00      1.00      1.00       100
+    ASK_FROM       1.00      1.00      1.00       100
+
+    accuracy                           0.94      1100
+   macro avg       0.94      0.94      0.94      1100
+weighted avg       0.94      0.94      0.94      1100
