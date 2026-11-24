@@ -1,7 +1,7 @@
-# FlexVoice 2.3
+# Kural
 ### An ESP32-Based Gesture-to-Speech Assistive Communication System
 
-**FlexVoice** is a hardware-based assistive communication prototype that combines finger movement, rotary input, and wrist orientation to recognize predefined communication gestures and convert them into spoken phrases.
+**Kural** is a hardware-based assistive communication prototype that combines finger movement, rotary input, and wrist orientation to recognize predefined communication gestures and convert them into spoken phrases.
 
 Built using an **ESP32, a flex sensor, a potentiometer, and an MPU6050 accelerometer/gyroscope**, the system explores an affordable approach to gesture-based communication.
 
@@ -11,7 +11,7 @@ The project focuses on demonstrating how multiple low-cost sensors can work toge
 
 ## Project Overview
 
-FlexVoice 2.3 uses three sensor inputs to distinguish between different gesture states:
+Kural uses three sensor inputs to distinguish between different gesture states:
 
 - **Flex Sensor:** Detects finger bending and straightening.
 - **Potentiometer:** Provides an additional intentional input to distinguish gesture categories.
@@ -92,7 +92,7 @@ ESP32
 
 ## Gesture Recognition Design
 
-FlexVoice 2.3 uses three physical input conditions to distinguish gesture categories.
+Kural uses three physical input conditions to distinguish gesture categories.
 
 ### 1. REST State
 
@@ -148,7 +148,7 @@ The software pipeline consists of three main Python scripts.
 
 The ESP32 firmware is maintained in:
 
-`FlexVoice_2_3_ESP32.ino`
+`Kural_ESP32.ino`
 
 ### Serial Data Format
 
@@ -182,7 +182,7 @@ The serial baud rate is **115200**.
 
 ### Step 1: Upload ESP32 Firmware
 
-1. Open `FlexVoice_2_3_ESP32.ino` in Arduino IDE.
+1. Open `Kural_ESP32.ino` in Arduino IDE.
 2. Select your board: `ESP32 Dev Module`.
 3. Select the appropriate COM port.
 4. Upload the firmware.
@@ -268,7 +268,7 @@ The system reads incoming sensor values and performs live gesture recognition.
 
 ## Dataset Design
 
-FlexVoice 2.3 uses a separate dataset because the sensor arrangement differs from the earlier v2.2 implementation.
+Kural 2.3 uses a separate dataset because the sensor arrangement differs from the earlier v2.2 implementation.
 
 | Parameter | Configuration |
 |---|---|
@@ -319,7 +319,7 @@ If two different wrist positions produce similar predictions:
 
 ## Current Limitations
 
-FlexVoice 2.3 is a proof-of-concept assistive communication demonstrator.
+Kural 2.3 is a proof-of-concept assistive communication demonstrator.
 
 Current limitations include:
 
@@ -350,12 +350,12 @@ Potential directions for future development:
 
 ## Project Vision
 
-Our goal with FlexVoice is to explore how affordable embedded hardware and machine learning can make communication more accessible.
+Our goal with Kural is to explore how affordable embedded hardware and machine learning can make communication more accessible.
 
 By combining sensor-based gesture recognition with speech output, we aim to develop a practical foundation for assistive communication technology.
 
-**FlexVoice — Turning gestures into a voice.**
+**Kural — Turning gestures into a voice.**
 
 ---
 
-*Disclaimer: FlexVoice is an experimental educational prototype and is not a certified medical device or a replacement for established assistive communication systems.*
+*Disclaimer: Kural is an experimental educational prototype and is not a certified medical device or a replacement for established assistive communication systems.*
